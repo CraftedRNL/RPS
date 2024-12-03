@@ -1,0 +1,17 @@
+body {
+    background-image: url("../img/apocalypse.jpg");
+    background-repeat:no-repeat ;
+    height: 100vh;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.col-6{
+    height: 100vh;
+   
+}
