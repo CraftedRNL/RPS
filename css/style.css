@@ -1,17 +1,54 @@
 body {
-    background-image: url("../img/apocalypse.jpg");
+    
+}
+.container-fluid {
+    background-image: url("../img/hell-08.jpg");
     background-repeat:no-repeat ;
     height: 100vh;
     width: 100%;
 }
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    width: 600px;
 }
 .col-6{
     height: 100vh;
    
+}
+.btm {
+ width: 100vh;
+    position: absolute;
+    bottom: 20%;
+}
+.rock {
+    position: absolute;
+    width: 250px;
+    bottom: 10%;
+    cursor: pointer; 
+}
+.paper {
+    position: absolute;
+    width: 250px;
+    top: 5%; 
+    justify-content: center;
+    cursor: pointer; 
+}
+.scissor {
+    position: absolute;
+    width: 250px;
+    bottom: 10%;
+    cursor: pointer; 
+}
+.tp {
+    display: flex;
+    width: 100vh;
+    height: 40vh;
+    justify-content: center;
+}
+.sc {
+    display: flex;
+    justify-content: left;
 }
