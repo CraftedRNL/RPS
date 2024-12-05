@@ -12,10 +12,5 @@ console.log(cpu)
 
 let cc = '';
 
-document.querySelectorAll("img").forEach((img) => {
-    document.querySelectorAll("img").addEventListener("click", function() {
-        console.log(pinput);
-      });
-    
-    });
+
  

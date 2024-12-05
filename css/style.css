@@ -1,54 +1,49 @@
 body {
-    
+    height: 100vh;
 }
 .container-fluid {
     background-image: url("../img/hell-08.jpg");
     background-repeat:no-repeat ;
-    height: 100vh;
+    background-size: cover;
+    height: 100%;
     width: 100%;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    width: 600px;
-}
-.col-6{
-    height: 100vh;
-   
-}
+    margin: 0 auto;
+    background-attachment: fixed;
+    
+    }
+
+
 .btm {
  width: 100vh;
     position: absolute;
     bottom: 20%;
 }
+.col-3 {
+align-self: flex-end ;
+margin-bottom: 100px;
+}
 .rock {
-    position: absolute;
-    width: 250px;
-    bottom: 10%;
+    
     cursor: pointer; 
 }
 .paper {
     position: absolute;
-    width: 250px;
     top: 5%; 
-    justify-content: center;
     cursor: pointer; 
 }
 .scissor {
-    position: absolute;
-    width: 250px;
-    bottom: 10%;
     cursor: pointer; 
 }
 .tp {
     display: flex;
-    width: 100vh;
-    height: 40vh;
+    width: 50%;
     justify-content: center;
 }
-.sc {
-    display: flex;
-    justify-content: left;
+
+.row {
+    height: 100%;
+}
+img {
+    height: auto;
+    width: auto;
 }
