@@ -2,15 +2,14 @@ body {
     height: 100vh;
 }
 .container-fluid {
-    background-image: url("../img/hell-08.jpg");
-    background-repeat:no-repeat ;
+    background: url("../img/cave.jpg") no-repeat center center fixed; 
     background-size: cover;
     height: 100%;
     width: 100%;
     margin: 0 auto;
     background-attachment: fixed;
-    
-    }
+   
+}
 
 
 .btm {
