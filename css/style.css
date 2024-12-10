@@ -15,7 +15,7 @@ body {
 .btm {
  width: 100vh;
     position: absolute;
-    bottom: 20%;
+    bottom: 0%;
 }
 .col-3 {
 align-self: flex-end ;
