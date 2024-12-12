@@ -39,6 +39,8 @@ function change(){
     }else if(count ==4){
         b0.style.backgroundImage= b4;
         e0.src = ('img/hades.png')
+    }else if(count ==5){
+        window.location.href = 'end.html';
     }
 }
 
@@ -53,7 +55,7 @@ var choice ='';
 
 var b0 = document.getElementById('background');
 var e0 = document.getElementById('enemy');
-let count = 1;
+var count = 1;
 let pc = '';
 
 
@@ -69,7 +71,8 @@ document.getElementById('rock').addEventListener("click", function rock() {
         alert('You Tie')
     }else {
         alert('You Lose')
-        count = 1;
+         window.location.href = 'fail.html'
+        
     }
     
     computer();
@@ -87,7 +90,7 @@ document.getElementById('paper').addEventListener("click", function() {
         alert('You Tie')
     }else {
         alert('You Lose')
-        count = 1;
+         window.location.href = 'fail.html'
     }
     change() 
     computer();
@@ -103,7 +106,7 @@ document.getElementById('scissor').addEventListener("click", function() {
         alert('You Tie')
     }else {
         alert('You Lose')
-        count = 1;
+         window.location.href = 'fail.html'
     }
     change()
     computer();
@@ -113,3 +116,12 @@ document.getElementById('scissor').addEventListener("click", function() {
 
     
 console.log(cpu);
+
+
+
+localStorage.setItem("count", count);
+
+document.getElementById('enemy').addEventListener("click", function() {
+    count++;
+    alert('point');
+ });
