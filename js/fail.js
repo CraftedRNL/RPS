@@ -8,7 +8,16 @@
          count = 1;
      }
    }
+window.onload = vid();
  
- if(count >= 4){
-     document.getElementById('video').setAttribute("src", "img/Hadesfail.mp4")
- }
+function vid(){
+    if(count >= 1){
+        console.log("In here");
+         var ivideo = document.getElementById('video');
+         ivideo.src =  "img/Hadesfail.mp4";
+         document.getElementById('myVideo').load();
+
+    }
+}
+
+ window.onload = alert(localStorage.getItem("count"));

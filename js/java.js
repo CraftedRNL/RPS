@@ -66,6 +66,7 @@ document.getElementById('rock').addEventListener("click", function rock() {
     if(cpu == 'scissor' && pc =='rock'){
         alert('You Win')
         count++;
+        localStorage.setItem("count", count);
     }
     else if(cpu == pc){
         alert('You Tie')
@@ -74,11 +75,7 @@ document.getElementById('rock').addEventListener("click", function rock() {
          window.location.href = 'fail.html'
         
     }
-    
     computer();
-    setTimeout(() => {
-        
-    }, timeout);
     change()
 });
 document.getElementById('paper').addEventListener("click", function() {
@@ -86,6 +83,7 @@ document.getElementById('paper').addEventListener("click", function() {
     if(cpu == 'rock' && pc == 'paper'){
         alert('You Win')
         count++;
+        localStorage.setItem("count", count);
     }else if(cpu == pc){
         alert('You Tie')
     }else {
@@ -102,6 +100,7 @@ document.getElementById('scissor').addEventListener("click", function() {
     if(cpu == 'paper' && pc == 'scissor'){
         alert('You Win')
         count++;
+        localStorage.setItem("count", count);
     }else if(cpu == pc){
         alert('You Tie')
     }else {
@@ -114,14 +113,6 @@ document.getElementById('scissor').addEventListener("click", function() {
 
 
 
-    
-console.log(cpu);
 
 
 
-localStorage.setItem("count", count);
-
-document.getElementById('enemy').addEventListener("click", function() {
-    count++;
-    alert('point');
- });
