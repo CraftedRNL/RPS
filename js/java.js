@@ -43,6 +43,23 @@ function change(){
         window.location.href = 'end.html';
     }
 }
+function darkness(){
+    count ++;
+    const overlay = document.getElementById('darkness');
+    overlay.style.opacity = 1;
+    overlay.style.transform = "scale(100)";
+    
+    setTimeout(function () {
+        overlay.style.transform = "scale(0)";
+        change()
+    }, 1000)
+}
+function tie(){
+text.innerHTML = 'NUHUH'
+setTimeout(function () {
+    text.innerHTML = ''
+}, 500)
+}
 
 
 console.log(cpu)
@@ -58,59 +75,54 @@ var e0 = document.getElementById('enemy');
 var count = 1;
 let pc = '';
 
-
+var text = document.getElementById('nuh');
 
 
 document.getElementById('rock').addEventListener("click", function rock() {
     pc = 'rock'
     if(cpu == 'scissor' && pc =='rock'){
-        alert('You Win')
-        count++;
+         
+        darkness()
         localStorage.setItem("count", count);
     }
     else if(cpu == pc){
-        alert('You Tie')
+        tie()
     }else {
-        alert('You Lose')
+          
          window.location.href = 'fail.html'
         
     }
     computer();
-    change()
+    
 });
 document.getElementById('paper').addEventListener("click", function() {
     pc = 'paper'
     if(cpu == 'rock' && pc == 'paper'){
-        alert('You Win')
-        count++;
+        darkness()
         localStorage.setItem("count", count);
     }else if(cpu == pc){
-        alert('You Tie')
+        tie()
     }else {
-        alert('You Lose')
+          
          window.location.href = 'fail.html'
     }
-    change() 
     computer();
     
 });
-
 document.getElementById('scissor').addEventListener("click", function() {
     pc = 'scissor'
     if(cpu == 'paper' && pc == 'scissor'){
-        alert('You Win')
-        count++;
+         
+        darkness()
         localStorage.setItem("count", count);
     }else if(cpu == pc){
-        alert('You Tie')
+        tie()
     }else {
-        alert('You Lose')
+          
          window.location.href = 'fail.html'
     }
-    change()
     computer();
 });
-
 
 
 

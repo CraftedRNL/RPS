@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    overflow: hidden;
 }
 .container-fluid {
     background: url("../img/cave.jpg") no-repeat center center fixed; 
@@ -76,4 +77,20 @@ img {
   #myBtn:hover {
     background: #ddd;
     color: black;
+  }
+
+  #circle {
+    cursor: pointer; 
+}
+#darkness {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none; 
+  z-index: 101;
+  transition: opacity 1s ease-out, transform 1s ease-out; 
   }

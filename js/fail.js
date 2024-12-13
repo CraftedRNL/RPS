@@ -11,7 +11,7 @@
 window.onload = vid();
  
 function vid(){
-    if(count >= 1){
+    if(count >= 5){
         console.log("In here");
          var ivideo = document.getElementById('video');
          ivideo.src =  "img/Hadesfail.mp4";
@@ -19,5 +19,3 @@ function vid(){
 
     }
 }
-
- window.onload = alert(localStorage.getItem("count"));
