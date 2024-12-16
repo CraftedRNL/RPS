@@ -17,6 +17,7 @@ body {
  width: 100vh;
     position: absolute;
     bottom: 0%;
+    
 }
 .col-3 {
 align-self: flex-end ;
@@ -93,4 +94,8 @@ img {
   pointer-events: none; 
   z-index: 101;
   transition: opacity 1s ease-out, transform 1s ease-out; 
+  }
+  h1 {
+    min-height: 100px;
+    color: white;
   }

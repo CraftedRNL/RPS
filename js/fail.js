@@ -11,7 +11,7 @@
 window.onload = vid();
  
 function vid(){
-    if(count >= 5){
+    if(count >= 4){
         console.log("In here");
          var ivideo = document.getElementById('video');
          ivideo.src =  "img/Hadesfail.mp4";

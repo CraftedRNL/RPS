@@ -23,6 +23,7 @@ function computer() {
         cpu = 'scissor'
        
     }
+    console.log(cpu)
 }
 
 function change(){
@@ -48,11 +49,17 @@ function darkness(){
     const overlay = document.getElementById('darkness');
     overlay.style.opacity = 1;
     overlay.style.transform = "scale(100)";
-    
+    for (let i = 0; i < collection.length; i++) {
+        collection[i].style.pointerEvents = "none";
+      }
     setTimeout(function () {
         overlay.style.transform = "scale(0)";
+        
         change()
-    }, 1000)
+        for (let i = 0; i < collection.length; i++) {
+            collection[i].style.pointerEvents = "auto";
+          }
+    }, 1500)
 }
 function tie(){
 text.innerHTML = 'NUHUH'
@@ -77,8 +84,10 @@ let pc = '';
 
 var text = document.getElementById('nuh');
 
+const collection = document.getElementsByTagName("img");
 
-document.getElementById('rock').addEventListener("click", function rock() {
+
+document.getElementById('rock').addEventListener("click", function () {
     pc = 'rock'
     if(cpu == 'scissor' && pc =='rock'){
          
